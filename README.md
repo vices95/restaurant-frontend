@@ -16,25 +16,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
 This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Resources
 
-To learn more about Next.js, take a look at the following resources:
+For GraphQL API access, [Apollo Client](https://www.apollographql.com/) is used along with [GraphQL WS](https://the-guild.dev/graphql/ws) for subscriptions. For type generation, [GraphQL Code Generator](https://the-guild.dev/graphql/codegen/) is used.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+For styles, [Tailwind CSS](https://tailwindcss.com/) is used.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For forms, [React Hook Form](https://react-hook-form.com/) togheter with [Zod](https://zod.dev/) for validation.
 
-## Deploy on Vercel
+For consistant code style [Prettier](https://prettier.io/) and [Husky](https://typicode.github.io/husky/).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Anotations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+We have to move to onData: see the full error text at https://go.apollo.dev/c/err#%7B%22version%22%3A%223.12.2%22%2C%22message%22%3A62%2C%22args%22%3A%5B%5D%7D
+'onSubscriptionData' is deprecated and will be removed in a future major version. Please use the 'onData' option instead.
